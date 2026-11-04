@@ -1,0 +1,21 @@
+{
+  "name": "projeto-escola",
+  "version": "1.0.0",
+  "description": "API REST para gerenciamento de alunos e disciplinas com Node.js e MongoDB",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "seed": "node src/scripts/seed.js",
+    "test": "node --test tests/*.test.js",
+    "verificar:evidencias": "node scripts/verificar-evidencias.js"
+  },
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "mongoose": "^9.11.4"
+  }
+}
